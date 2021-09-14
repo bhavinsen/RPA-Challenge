@@ -92,7 +92,7 @@ for index, header in enumerate(INDIVIDUAL_HEADERS, start=1):
     sheet.cell(row=1, column=index).value = header
     
 last_row = 2
-for individual in individual_urls[:1]:
+for individual in individual_urls:
     driver.get(individual)
     time.sleep(10)
     Select(driver.find_element_by_name("investments-table-object_length")).select_by_value("-1")
