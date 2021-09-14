@@ -1,3 +1,6 @@
 openpyxl
-urllib
+urllib3
 requests
+selenium
+bs4
+webdriver_manager
